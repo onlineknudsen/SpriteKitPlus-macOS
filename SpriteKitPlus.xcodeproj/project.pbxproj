@@ -10,6 +10,10 @@
 		3DCE570C21116B9800F2E299 /* SpriteKitPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DCE570221116B9700F2E299 /* SpriteKitPlus.framework */; };
 		3DCE571121116B9800F2E299 /* SpriteKitPlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE571021116B9800F2E299 /* SpriteKitPlusTests.swift */; };
 		3DCE571321116B9800F2E299 /* SpriteKitPlus.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DCE570521116B9800F2E299 /* SpriteKitPlus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DCE571E21116BF200F2E299 /* InputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE571D21116BF200F2E299 /* InputManager.swift */; };
+		3DCE572021116C5B00F2E299 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE571F21116C5B00F2E299 /* Protocols.swift */; };
+		3DCE57222111701300F2E299 /* KeyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE57212111701300F2E299 /* KeyCode.swift */; };
+		3DCE57242111717000F2E299 /* Mouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE57232111717000F2E299 /* Mouse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		3DCE570B21116B9800F2E299 /* SpriteKitPlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpriteKitPlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCE571021116B9800F2E299 /* SpriteKitPlusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitPlusTests.swift; sourceTree = "<group>"; };
 		3DCE571221116B9800F2E299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DCE571D21116BF200F2E299 /* InputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputManager.swift; sourceTree = "<group>"; };
+		3DCE571F21116C5B00F2E299 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		3DCE57212111701300F2E299 /* KeyCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCode.swift; sourceTree = "<group>"; };
+		3DCE57232111717000F2E299 /* Mouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mouse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,8 @@
 		3DCE570421116B9700F2E299 /* SpriteKitPlus */ = {
 			isa = PBXGroup;
 			children = (
+				3DCE571F21116C5B00F2E299 /* Protocols.swift */,
+				3DCE571C21116BB700F2E299 /* Input */,
 				3DCE570521116B9800F2E299 /* SpriteKitPlus.h */,
 				3DCE570621116B9800F2E299 /* Info.plist */,
 			);
@@ -84,6 +94,16 @@
 				3DCE571221116B9800F2E299 /* Info.plist */,
 			);
 			path = SpriteKitPlusTests;
+			sourceTree = "<group>";
+		};
+		3DCE571C21116BB700F2E299 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				3DCE571D21116BF200F2E299 /* InputManager.swift */,
+				3DCE57212111701300F2E299 /* KeyCode.swift */,
+				3DCE57232111717000F2E299 /* Mouse.swift */,
+			);
+			path = Input;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +168,7 @@
 				TargetAttributes = {
 					3DCE570121116B9700F2E299 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					3DCE570A21116B9800F2E299 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -194,6 +215,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DCE571E21116BF200F2E299 /* InputManager.swift in Sources */,
+				3DCE57222111701300F2E299 /* KeyCode.swift in Sources */,
+				3DCE572021116C5B00F2E299 /* Protocols.swift in Sources */,
+				3DCE57242111717000F2E299 /* Mouse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +363,7 @@
 		3DCE571721116B9800F2E299 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -357,6 +383,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lek.SpriteKitPlus;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -364,6 +391,7 @@
 		3DCE571821116B9800F2E299 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -390,6 +418,7 @@
 		3DCE571A21116B9800F2E299 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4P837G75K4;
@@ -408,6 +437,7 @@
 		3DCE571B21116B9800F2E299 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4P837G75K4;
