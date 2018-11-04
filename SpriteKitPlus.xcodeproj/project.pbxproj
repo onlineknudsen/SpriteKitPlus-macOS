@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DB17132218EB98D0075CEA0 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB17131218EB98D0075CEA0 /* GameScene.swift */; };
 		3DCE570C21116B9800F2E299 /* SpriteKitPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DCE570221116B9700F2E299 /* SpriteKitPlus.framework */; };
 		3DCE571121116B9800F2E299 /* SpriteKitPlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE571021116B9800F2E299 /* SpriteKitPlusTests.swift */; };
 		3DCE571321116B9800F2E299 /* SpriteKitPlus.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DCE570521116B9800F2E299 /* SpriteKitPlus.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3DB17131218EB98D0075CEA0 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		3DCE570221116B9700F2E299 /* SpriteKitPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpriteKitPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCE570521116B9800F2E299 /* SpriteKitPlus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpriteKitPlus.h; sourceTree = "<group>"; };
 		3DCE570621116B9800F2E299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				3DCE571F21116C5B00F2E299 /* Protocols.swift */,
+				3DB17131218EB98D0075CEA0 /* GameScene.swift */,
 				3DCE571C21116BB700F2E299 /* Input */,
 				3DCE570521116B9800F2E299 /* SpriteKitPlus.h */,
 				3DCE570621116B9800F2E299 /* Info.plist */,
@@ -168,10 +171,11 @@
 				TargetAttributes = {
 					3DCE570121116B9700F2E299 = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 0940;
+						LastSwiftMigration = 1010;
 					};
 					3DCE570A21116B9800F2E299 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -215,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB17132218EB98D0075CEA0 /* GameScene.swift in Sources */,
 				3DCE571E21116BF200F2E299 /* InputManager.swift in Sources */,
 				3DCE57222111701300F2E299 /* KeyCode.swift in Sources */,
 				3DCE572021116C5B00F2E299 /* Protocols.swift in Sources */,
@@ -384,7 +389,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -411,7 +416,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lek.SpriteKitPlus;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -430,7 +435,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lek.SpriteKitPlusTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -449,7 +454,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lek.SpriteKitPlusTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

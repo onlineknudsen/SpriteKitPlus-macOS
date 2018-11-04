@@ -108,6 +108,9 @@ public final class InputManager : SKNode, LateUpdatable {
      class GameScene: SKScene {
         var inputManager = InputManager()
      
+        override func didMove(to view: SKView) {
+            addChild(inputManager)
+        }
         ...
      
         override func didFinishUpdate() {
