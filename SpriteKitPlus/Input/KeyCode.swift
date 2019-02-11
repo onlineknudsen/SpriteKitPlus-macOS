@@ -2,11 +2,12 @@
 //  KeyCode.swift
 //  SpriteKitPlus
 //
-//  Created by Lin Knudsen on 7/31/18.
-//  Copyright © 2018 Lin Knudsen. All rights reserved.
-//
+//  Based on Keycode.swift
+//  Author: swillits
+//  Date: 2018
+//  https://gist.github.com/swillits/df648e87016772c7f7e5dbed2b345066
 
-import Foundation
+
 
 public struct KeyCode {
     
