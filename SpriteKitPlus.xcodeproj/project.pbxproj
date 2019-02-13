@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D93F8E322128E3400C70212 /* CGVector+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93F8E222128E3400C70212 /* CGVector+Math.swift */; };
 		3DB17132218EB98D0075CEA0 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB17131218EB98D0075CEA0 /* GameScene.swift */; };
 		3DCE570C21116B9800F2E299 /* SpriteKitPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DCE570221116B9700F2E299 /* SpriteKitPlus.framework */; };
 		3DCE571121116B9800F2E299 /* SpriteKitPlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE571021116B9800F2E299 /* SpriteKitPlusTests.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D93F8E222128E3400C70212 /* CGVector+Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGVector+Math.swift"; sourceTree = "<group>"; };
 		3DB17131218EB98D0075CEA0 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		3DCE570221116B9700F2E299 /* SpriteKitPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpriteKitPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCE570521116B9800F2E299 /* SpriteKitPlus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpriteKitPlus.h; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		3DCE570421116B9700F2E299 /* SpriteKitPlus */ = {
 			isa = PBXGroup;
 			children = (
+				3D93F8E222128E3400C70212 /* CGVector+Math.swift */,
 				3DCE571F21116C5B00F2E299 /* Protocols.swift */,
 				3DB17131218EB98D0075CEA0 /* GameScene.swift */,
 				3DCE571C21116BB700F2E299 /* Input */,
@@ -221,6 +224,7 @@
 			files = (
 				3DB17132218EB98D0075CEA0 /* GameScene.swift in Sources */,
 				3DCE571E21116BF200F2E299 /* InputManager.swift in Sources */,
+				3D93F8E322128E3400C70212 /* CGVector+Math.swift in Sources */,
 				3DCE57222111701300F2E299 /* KeyCode.swift in Sources */,
 				3DCE572021116C5B00F2E299 /* Protocols.swift in Sources */,
 				3DCE57242111717000F2E299 /* Mouse.swift in Sources */,
