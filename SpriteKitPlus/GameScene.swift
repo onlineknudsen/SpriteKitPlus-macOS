@@ -20,9 +20,6 @@ open class GameScene: SKScene {
         addChild(inputManager)
     }
     
-    required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     //MARK: - Update
     open override func update(_ currentTime: TimeInterval) {
         deltaTime = currentTime - lastTime
@@ -56,7 +53,7 @@ extension GameScene {
     }
     
     open override func keyUp(with event: NSEvent) {
-        inputManager.setKeyDown(keyCode: event.keyCode)
+        inputManager.setKeyUp(keyCode: event.keyCode)
     }
     
     open override func mouseDown(with event: NSEvent) {
